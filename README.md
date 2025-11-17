@@ -3,11 +3,11 @@
 Projeto acadêmico em C/SDL2 com interface gráfica. Jogo estilo Tetris moderno (SRS), com **hold**, **ghost**, fila 7-bag, HUD, animações e **ranking** local.
 
 - **Vídeo demonstrativo:** https://youtu.be/o8UMokPb4Mo  
-- **Executável pronto (repositório/ZIP):** <COLOQUE_AQUI_O_LINK_DO_REPO_DO_EXECUTAVEL>
+- **Executável pronto (repositório/ZIP):** <[jogo.exe](https://github.com/JoaoPNobrega/EmpilhaBlocos.Exe)>
 
 ## Integrantes
 - João Pedro Nóbrega
-- Marco
+- Marco Antonio Veras
 
 ---
 
@@ -22,19 +22,7 @@ Projeto acadêmico em C/SDL2 com interface gráfica. Jogo estilo Tetris moderno 
    gcc -std=c17 -O2 main_tetris.c core/tetris.c core/highscore.c ui/ui_tetris.c \
      $(pkg-config --cflags --libs sdl2 SDL2_ttf) -o tetris.exe
    ./tetris.exe
-### Linux (Debian/Ubuntu)
-
-sudo apt update
-sudo apt install build-essential pkg-config libsdl2-dev libsdl2-ttf-dev
-gcc -std=c17 -O2 main_tetris.c core/tetris.c core/highscore.c ui/ui_tetris.c \
-  $(pkg-config --cflags --libs sdl2 SDL2_ttf) -o tetris
-./tetris
-
-
-### macOS (Homebrew)
-brew install sdl2 sdl2_ttf pkg-config
-clang -std=c17 -O2 main_tetris.c core/tetris.c core/highscore.c ui/ui_tetris.c \
-  $(pkg-config --cflags --libs sdl2 SDL2_ttf) -o tetris
-./tetris
 
 Controles: A/D mover | S descer | E/Q girar | ESPAÇO hard drop | C hold | ESC sair.
+
+
